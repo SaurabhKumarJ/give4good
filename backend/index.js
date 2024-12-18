@@ -5,13 +5,13 @@ const port = 5000;
 const connectTomongo = require('./db');
 const cors = require('cors');
 connectTomongo();
-// app.use(cors());
-app.use(cors({
-  origin: 'http://localhost:3000', // Replace with the URL of your React app
-  // origin: 'https://checkout.stripe.com', // Replace with the URL of your React app
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: 'http://localhost:3000', // Replace with the URL of your React app
+//   // origin: 'https://checkout.stripe.com', // Replace with the URL of your React app
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+// }));
 
 app.use(express.json());
 // Available Routes

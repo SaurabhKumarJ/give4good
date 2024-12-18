@@ -2,7 +2,6 @@ import argparse
 import io
 import time
 from PIL import Image
-
 import torch
 from flask import Flask, render_template, request, redirect, jsonify
 from flask_cors import CORS
@@ -25,7 +24,7 @@ def process_image():
     processing_time = end_time - start_time
     data = results.pandas().xyxy[0].to_json(orient="records")
     print(processing_time)
-    return data;
+    return data
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Flask app exposing yolov5 models")
