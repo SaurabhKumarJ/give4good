@@ -28,16 +28,6 @@ const About = () => {
                     Join us on our mission to make a difference. Whether you choose to buy, donate, or both, every action counts. Together, we can build a more sustainable and compassionate world.
                 </p>
             </section>
-
-            <section className="section">
-                <h2 className="section-title">Our Team</h2>
-                <ul className="team-list">
-                    <li className="team-member">Aman Kumar</li>
-                    <li className="team-member">Abhishek Porwal</li>
-                    <li className="team-member">Abhinav Pandey</li>
-                    <li className="team-member">Pratyush Ghatole</li>
-                </ul>
-            </section>
         </main>
 
     )
